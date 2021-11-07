@@ -3,7 +3,7 @@
 #picom -f &
 #lxpolkit &
 #nitrogen --restore &
-feh --bg-fill .config/wallpaper.jpg &
+feh --bg-fill ~/Pictures/wallpaper.jpg &
 $HOME/.config/polybar/launch.sh 
 
 
@@ -18,6 +18,7 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
+#bspc rule -a \* node="@/2" split_dir="south"
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
