@@ -65,11 +65,10 @@ modules-right = filesystem xkeyboard pulseaudio date
 #modules-right = filesystem pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 
 separator = |
-tray-position = none
-tray-padding = 2
-;tray-background = #0063ff
 
-;wm-restack = bspwm
+tray-position = left
+
+wm-restack = bspwm
 ;wm-restack = i3
 
 ;override-redirect = true
